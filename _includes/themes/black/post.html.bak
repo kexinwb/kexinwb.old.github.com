@@ -9,7 +9,7 @@
         {{ content }}
       </div>
     </div>
-
+    
     <div class="main-container">
       <div class="mainbody">
         {% include ever/share %}
@@ -18,40 +18,25 @@
 
         <div class="pagination">
           <ul>
-            {% if page.previous %}
+          {% if page.previous %}
             <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
-            {% else %}
+          {% else %}
             <li class="prev disabled"><a>&larr; Previous</a></li>
-            {% endif %}
+          {% endif %}
             <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
-            {% if page.next %}
+          {% if page.next %}
             <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
-            {% else %}
+          {% else %}
             <li class="next disabled"><a>Next &rarr;</a>
-              {% endif %}
-            </ul>
-          </div>
+          {% endif %}
+          </ul>
         </div>
       </div>
+    </div>
 
-      <div class="main-container">
-        <div class="mainbody">
-          <div id="disqus_thread"></div>
-          <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'vonnyfly'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + '{{ site.JB.comments.disqus.short_name }}' + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-    <!--<button class="btn-primary btn-small" id="show_disqus">Show Comments</button>
+    <div class="main-container">
+      <div class="mainbody">
+        <button class="btn-primary btn-small" id="show_disqus">Show Comments</button>
         <script type="text/javascript">
           $(function() {
             $('#show_disqus').click(function() {
@@ -65,12 +50,12 @@
               $('#show_disqus').after('<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>').after('<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>').after(s).hide();
             });
           });
-        </script>-->
+        </script>
       </div>
     </div>
-
+    
   </div>
-
+  
   <div class="span3">
     <div class="side-container">
       <div class="sidebar">
@@ -82,11 +67,11 @@
     <div class="side-container">
       <div class="sidebar">
         {% unless page.tags == empty %}
-        <h4>Tags</h4>
-        <ul class="tag_box">
+          <h4>Tags</h4>
+          <ul class="tag_box">
           {% assign tags_list = page.tags %}
           {% include JB/tags_list %}
-        </ul>
+          </ul>
         {% endunless %}        
       </div>
     </div>
