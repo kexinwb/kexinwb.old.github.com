@@ -6,6 +6,10 @@ category:
 tags: []
 ---
 {% include JB/setup %}
+我们都知道，CPU的高速缓存具有局部性:
+1. 空间局部性
+2. 时间局部性
+
 	#include <time.h>
 	#include <stdio.h>
 	#include <stdlib.h>
