@@ -10,7 +10,7 @@ group: "navigation"
 ### 关于我
 Linux 爱好者，内核爱好者，喜欢底层，嵌入式设备，平时喜欢捣鼓Linux下各种小玩意儿。常用的编程语言有C/C++、PYTHON、Erlang、Shell等，其它语言也略知一二。现专注于Android底层。
 
-* 网站源码：<http://github.com/vonnyfly/vonnyfly.gituhub.com>
+* 网站源码：<https://github.com/vonnyfly/vonnyfly.github.com>
 * [Jekyll Bootstrap][]
 * [Twitter Bootstrap][]
 * [jQuery][]

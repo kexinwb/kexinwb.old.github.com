@@ -1,10 +1,8 @@
-# EverCoding.net
+# vonnyfly的小屋
 
 A static blog built with [Jekyll-BootStrap][] on github pages
 
-**EverCoding.net** is my domain.
-
-## Function that has been realized
+## Implemented
 
 * Home page shows rencent post, categories and tags
 * Home page pagination and go to top of page
@@ -18,7 +16,7 @@ A static blog built with [Jekyll-BootStrap][] on github pages
 * My personal theme: black
 * Button clicking to show comments
 
-## Function that will be realized
+## On the going
 
 * The post with most comments
 * The latest comments
