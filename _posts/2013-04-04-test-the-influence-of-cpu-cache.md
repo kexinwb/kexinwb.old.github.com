@@ -6,9 +6,14 @@ category:
 tags: []
 ---
 {% include JB/setup %}
+
 我们都知道，CPU的高速缓存具有局部性:
+
 1. 空间局部性
 2. 时间局部性
+
+这两种局部性体现在：当访问某个地址时，它附近的地址很可能接下来被访问，所以CPU在取得一个地址数据的时候，会连它周围的数据也一起放入cache；当一个地址被访问时，它接下来再次被访问的概率很高，所以采用LRU替换算法来更新cache。  
+使用以下代码来测试：
 
 	#include <time.h>
 	#include <stdio.h>
@@ -38,17 +43,20 @@ tags: []
 	
 	#define N 5
 	typedef u32int (*next_func_t)(u32int pageOffset,u32int wordOffset,u32int pos);
+当线性扫描地址时，由于CPU提前将数据块装载进入高速缓存，所以使得缓存命中高，性能最好。
 	
 	u32int linear_walk(u32int pageOffset,u32int wordOffset,u32int pos)
 	{
 	  return (pos+1) & ARRAY_MASK;
 	}
 	
+当在一个页面的范围内扫描时，虽然是随机的，但是页面的范围有限，使得缓存命中率不会那么低，性能一般。
 	u32int random_page_walk(u32int pageOffset,u32int wordOffset,u32int pos)
 	{
 	  return (pageOffset + ((pos + PRIME_INC) & PAGE_MASK)) & ARRAY_MASK;
 	}
-	
+在这种情况下，由于访问地址是随机的（在整个2G的空间内），所以空间局部性不能起到作用，反而降低了性能，也就导致了非常低的性能。
+
 	u32int random_heap_walk(u32int pageOffset,u32int wordOffset,u32int pos)
 	{
 	  return (pos + PRIME_INC) & ARRAY_MASK;
@@ -87,3 +95,5 @@ tags: []
 	  if(memory)
 	    free(memory);
 	}
+结果如下：
+测试平台为：
