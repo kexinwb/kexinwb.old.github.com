@@ -13,16 +13,16 @@ description_length: 200
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : 天外天
-address: EverCoding.net
-tagline: 分享编程的点滴
+title : vonnyfly的小屋
+#address: EverCoding.net
+tagline: 分享编程、生活点滴
 author :
-  name : Ever
-  email : g.everax@gmail.com
-  github : iEverX
-  twitter : username
+  name : vonnyfly
+  email : lifeng1519@gmail.com
+  github : vonnyfly
+#twitter : 
   feedburner : feedname
-start_year: "2012"
+start_year: "2013"
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
