@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ""
-tagline: "New Post"
-description: ""
+title: "测试CPU cache的延迟以及局部性原理"
+description: "test the influence of CPU cache"
+category: 
 tags: []
 ---
 {% include JB/setup %}
