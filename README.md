@@ -1,6 +1,9 @@
 # vonnyfly的小屋
 
-A static blog built with [Jekyll-BootStrap][] on github pages
+A static blog built with [Jekyll-BootStrap][] on github pages  
+
+##Site
+My site address is **https://vonnyfly.github.com**
 
 ## Implemented
 
@@ -28,8 +31,7 @@ A static blog built with [Jekyll-BootStrap][] on github pages
 With this blog, I will write something about programming, programmers and some of my life  
 I hope I would not give up updating this blog
 
-**Always not be fickle in a fickle society!**  
-**Having Dream, Heart Live**
+
 
 [Jekyll-BootStrap]: http://jekyllbootstrap.com
 [Skydark's blog]: http://blog.skydark.info
