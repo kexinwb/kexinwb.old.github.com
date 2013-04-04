@@ -3,7 +3,7 @@
 A static blog built with [Jekyll-BootStrap][] on github pages  
 
 ##Site
-My site address is **https://vonnyfly.github.com**
+My site address is **http://vonnyfly.github.com**
 
 ## Implemented
 
