@@ -13,6 +13,7 @@ tags: []
 2. 时间局部性
 
 这两种局部性体现在：当访问某个地址时，它附近的地址很可能接下来被访问，所以CPU在取得一个地址数据的时候，会连它周围的数据也一起放入cache；当一个地址被访问时，它接下来再次被访问的概率很高，所以采用LRU替换算法来更新cache。  
+
 使用以下代码来测试：
 
 	#include <time.h>
@@ -51,6 +52,7 @@ tags: []
 	}
 	
 当在一个页面的范围内扫描时，虽然是随机的，但是页面的范围有限，使得缓存命中率不会那么低，性能一般。
+
 	u32int random_page_walk(u32int pageOffset,u32int wordOffset,u32int pos)
 	{
 	  return (pageOffset + ((pos + PRIME_INC) & PAGE_MASK)) & ARRAY_MASK;
@@ -96,7 +98,8 @@ tags: []
 	    free(memory);
 	}
 
-测试平台为：Lenovo Y400,core i7 3630QM,2.4GHZ,8G RAM
+测试平台为：`Lenovo Y400,core i7 3630QM,2.4GHZ,8G RAM`
+
 数据如下：
 
 	0 - 1.21s walk_type:0
@@ -114,6 +117,8 @@ tags: []
 	2 - 6.40s walk_type:2
 	3 - 6.42s walk_type:2
 	4 - 6.65s walk_type:2
+
+结果分析：
 
 1. 顺序访问性能最好，平均1.21s访问完整个1G内存。
 2. 局部随机性的访问性能稍差，平均1.45s访问完整个1G内存。
