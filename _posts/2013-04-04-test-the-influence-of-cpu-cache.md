@@ -72,7 +72,7 @@ tags: []
 	  long long result;
 	  clock_t start,end;
 		
-	  for(i=0;i<ARRAY_SIZE;i++){
+	  for(i=0;i<ARRAY_SIZE;i++){。、
 	    memory[i] = 777;
 	  }
 	
@@ -95,5 +95,26 @@ tags: []
 	  if(memory)
 	    free(memory);
 	}
-结果如下：
-测试平台为：
+
+测试平台为：Lenovo Y400,core i7 3630QM,2.4GHZ,8G RAM
+数据如下：
+
+	0 - 1.21s walk_type:0
+	1 - 1.21s walk_type:0
+	2 - 1.22s walk_type:0
+	3 - 1.19s walk_type:0
+	4 - 1.19s walk_type:0
+	0 - 1.43s walk_type:1
+	1 - 1.46s walk_type:1
+	2 - 1.44s walk_type:1
+	3 - 1.45s walk_type:1
+	4 - 1.43s walk_type:1
+	0 - 6.12s walk_type:2
+	1 - 6.45s walk_type:2
+	2 - 6.40s walk_type:2
+	3 - 6.42s walk_type:2
+	4 - 6.65s walk_type:2
+
+1. 顺序访问性能最好，平均1.21s访问完整个1G内存。
+2. 局部随机性的访问性能稍差，平均1.45s访问完整个1G内存。
+3. 完全随机性访问性能最差，平均6.43s访问完整个1G内存。
