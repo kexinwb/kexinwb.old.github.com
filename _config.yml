@@ -13,13 +13,13 @@ description_length: 200
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : vonnyfly的小屋
-address: vonnyfly.github.com
+title : box的小屋
+address: kexinwb.github.com
 tagline: 分享编程、生活点滴
 author :
-  name : vonnyfly
-  email : lifeng1519@gmail.com
-  github : vonnyfly
+  name : kexinwb
+  email : kexinwb@gmail.com
+  github : kexinwb
 #twitter : 
   feedburner : feedname
 start_year: "2013"
