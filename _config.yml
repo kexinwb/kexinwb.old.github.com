@@ -14,7 +14,7 @@ description_length: 200
 # so be sure to set them if your theme uses them.
 #
 title : 盗治天下
-address: kexinwb.github.com
+#address: kexinwb.github.com
 tagline: 博客世界，程序人生
 author :
   name : kexinwb
