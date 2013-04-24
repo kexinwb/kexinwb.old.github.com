@@ -8,7 +8,7 @@ group: "navigation"
 {% include JB/setup %}
 
 ### 关于我
-我是大春鱼
+我是大春鱼，大春鱼
 
 * [Jekyll Bootstrap][]
 * [Twitter Bootstrap][]
