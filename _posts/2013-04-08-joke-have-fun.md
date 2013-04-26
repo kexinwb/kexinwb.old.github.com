@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GIT使用"
+title: "一些休闲/搞笑的话"
 description: "git usage"
 category: 
 tags: [休闲/搞笑的话]
