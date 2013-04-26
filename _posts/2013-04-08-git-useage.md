@@ -3,7 +3,7 @@ layout: post
 title: "GIT使用"
 description: "git usage"
 category: 
-tags: [git]
+tags: [git;git撤销]
 ---
 {% include JB/setup %}
 
