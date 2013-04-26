@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Messages"
+title: "消息"
 tagline: ""
 description: ""
 group: "navigation"
