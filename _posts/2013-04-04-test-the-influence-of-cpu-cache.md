@@ -2,7 +2,7 @@
 layout: post
 title: "测试CPU cache的延迟以及局部性原理"
 description: "test the influence of CPU cache"
-category: 
+category: test
 tags: [CPU, Cache延迟]
 ---
 {% include JB/setup %}

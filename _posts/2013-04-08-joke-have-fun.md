@@ -2,7 +2,7 @@
 layout: post
 title: "一些休闲/搞笑的话"
 description: "git usage"
-category: 
+category: life
 tags: [休闲/搞笑的话]
 ---
 {% include JB/setup %}
