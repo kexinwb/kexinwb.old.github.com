@@ -12,4 +12,4 @@ tags: [CPU, Cache延迟]
 1. 空间局部性
 2. 时间局部性
 
-[参考]: （http://vonnyfly.github.io/2013/04/04/test-the-influence-of-cpu-cache/ "原文地址"）
+以上内容转自：[http://blog.maxiang.net/git-advance-git-reset-checkout-diff-stash/239/](http://blog.maxiang.net/git-advance-git-reset-checkout-diff-stash/239/ "原文地址")
