@@ -11,4 +11,4 @@ tags: [CPU, Cache延迟]
 
 1. 空间局部性
 2. 时间局部性
-
+[参考]: http://vonnyfly.github.io/2013/04/04/test-the-influence-of-cpu-cache/  "http://vonnyfly.github.io/2013/04/04/test-the-influence-of-cpu-cache/"
