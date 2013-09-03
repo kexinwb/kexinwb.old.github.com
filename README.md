@@ -1,9 +1,9 @@
-# vonnyfly的小屋
+# github静态blog
 
 A static blog built with [Jekyll-BootStrap][] on github pages  
 
 ##Site
-My site address is **http://vonnyfly.github.com**
+My site address is **http://kexinwb.github.io/**
 
 ## Implemented
 
